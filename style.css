@@ -1,0 +1,169 @@
+/* General */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #222;
+  font-family: sans-serif;
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 16px;
+}
+
+main {
+  margin: 0 auto;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 176, 176, 0.5),
+    rgb(226, 210, 148, 0.5)
+  );
+}
+
+.email {
+  text-decoration: none;
+  color: #222;
+}
+
+/* For nav */
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  padding: 4px 20px;
+  border-radius: 20px;
+  border: 2px solid #333;
+  background-color: #fff;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  background-color: #bef8fa;
+  border: 2px solid #bef3fa;
+}
+
+/* For index.html (HOME) */
+
+.text-box {
+  line-height: 24px;
+  margin: 40px;
+}
+
+.text-box h1 {
+  color: rgb(17, 87, 87);
+  margin-bottom: 24px;
+}
+
+.important-text {
+  font-family: "Handlee";
+  font-size: 24px;
+  margin: 36px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+#self-img-box {
+  margin-bottom: 120px;
+}
+
+#self-img {
+  width: 36%;
+  border-radius: 2%;
+}
+
+/* For page1.html (PHOTOS) */
+.disney h2,
+.universal h2 {
+  margin: 40px 20px 8px 20px;
+  color: rgb(17, 87, 87);
+  font-size: 24px;
+}
+
+.disney,
+.universal {
+  margin: 0 20px;
+}
+
+.universal {
+  padding-bottom: 120px;
+}
+
+.disney-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.disney-img img {
+  width: 100%;
+}
+
+.universal-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.universal-img img {
+  width: 100%;
+}
+
+/* For page2.html (COMPARISON TABLE) */
+.tables {
+  margin: 0 auto;
+  width: 920px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 80px;
+}
+
+#table-disney,#table-universal{
+  background-color: #faffe7;
+}
+
+#table-disney-heading,
+#table-universal-heading {
+  color: rgb(17, 87, 87);
+  font-size: 24px;
+}
+
+th,
+td {
+  padding: 8px;
+}
+
+table,th,td{
+  border: 1px solid rgb(68, 135, 160);
+}
+
+thead .rides th {
+  text-transform: uppercase;
+}
