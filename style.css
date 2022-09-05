@@ -1,4 +1,4 @@
-/* I sort the selectors from generic to specific. The specific ones are ordered by their page number, i.e., style for home page first, then style for page1, then style for page2. */
+/* I sort the selectors based on "General", "home", "page 1", "page 2", etc. Specifically, the selectors are ordered based on the element's appearance on the page. */
 
 /* General */
 
@@ -21,26 +21,6 @@ body {
 
 main {
   margin: 0 auto;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(
-    to right,
-    rgb(252, 203, 203),
-    rgb(242, 230, 185)
-  );
-}
-
-.email {
-  text-decoration: none;
-  color: #222;
 }
 
 .nav-list {
@@ -69,6 +49,26 @@ main {
 .nav-link:active {
   background-color: #bef8fa;
   border: 2px solid #bef3fa;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(252, 203, 203),
+    rgb(242, 230, 185)
+  );
+}
+
+.email {
+  text-decoration: none;
+  color: #222;
 }
 
 /* For index.html (HOME) */
@@ -103,13 +103,6 @@ main {
 
 /* For page1.html (PHOTOS) */
 
-.disney h2,
-.universal h2 {
-  margin: 40px 20px 8px 20px;
-  color: rgb(17, 87, 87);
-  font-size: 24px;
-}
-
 .disney,
 .universal {
   margin: 0 20px;
@@ -117,6 +110,13 @@ main {
 
 .universal {
   padding-bottom: 120px;
+}
+
+.disney h2,
+.universal h2 {
+  margin: 40px 20px 8px 20px;
+  color: rgb(17, 87, 87);
+  font-size: 24px;
 }
 
 .disney-img {
@@ -159,15 +159,15 @@ main {
   font-size: 24px;
 }
 
-th,
-td {
-  padding: 8px;
-}
-
 table,
 th,
 td {
   border: 1px solid rgb(68, 135, 160);
+}
+
+th,
+td {
+  padding: 8px;
 }
 
 thead .rides th {
