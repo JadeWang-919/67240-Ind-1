@@ -5,78 +5,81 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="photos of Disneyland and Universal Studios"
+      content="location maps of Disneyland and Universal Studios"
     />
     <meta name="author" content="Jade Wang" />
     <meta
       name="keywords"
-      content="Disneyland, Universal Studios, theme park, rides, attractions, photos"
+      content="Disneyland, Universal Studios, theme park, location, map"
     />
 
     <!-- link to css file -->
     <link rel="stylesheet" href="style.css" />
 
-    <title>Photos</title>
+    <title>Location Maps</title>
   </head>
 
   <body>
-    <!-- This is a navigation bar -->
-    <nav class="nav">
-      <ul class="nav-list">
-        <li>
-          <a class="nav-link" href="index.html">HOME</a>
-        </li>
-        <li>
-          <a class="nav-link" href="page1.html">PHOTOS</a>
-        </li>
-        <li>
-          <a class="nav-link" href="page2.html">COMPARISON TABLE</a>
-        </li>
-        <li>
-          <a class="nav-link" href="page3.html">SURVEY FORM</a>
-        </li>
-        <li>
-          <a class="nav-link" href="page4.html">LOCATION MAPS</a>
-        </li>
-      </ul>
-    </nav>
+    <main>
+      <!-- This is a navigation bar -->
+      <nav class="nav">
+        <ul class="nav-list">
+          <li>
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li>
+            <a class="nav-link" href="page1.html">PHOTOS</a>
+          </li>
+          <li>
+            <a class="nav-link" href="page2.html">COMPARISON TABLE</a>
+          </li>
+          <li>
+            <a class="nav-link" href="page3.html">SURVEY FORM</a>
+          </li>
+          <li>
+            <a class="nav-link" href="page4.html">LOCATION MAPS</a>
+          </li>
+        </ul>
+      </nav>
 
-    <!-- This is a table that compares different rides and attractions -->
-    <table>
-      <thead>
-        <tr>
-          <th></th>
-          <th scope="“col”">Home starter hosting</th>
-          <th scope="“col”">Premium business hosting</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="“row”">Disk space</th>
-          <td>250mb</td>
-          <td>1gb</td>
-        </tr>
-        <tr>
-          <th scope="“row”">Bandwidth</th>
-          <td>5gb per month</td>
-          <td>50gb per month</td>
-        </tr>
-        <!-- more rows like the two above here -->
-      </tbody>
-      <tfoot>
-        <tr>
-          <td></td>
-          <td colspan="“2”">Sign up now and save 10%!</td>
-        </tr>
-      </tfoot>
-    </table>
+      <div class="maps">
+        <!-- info and map for disney -->
+        <div class="disney-info">
+          <h2>Walt Disney World Resort</h2>
+          <p>Address: Orlando, FL</p>
+          <p>Telephone: +14079395277</p>
+          <p>
+            Website:
+            <a href="https://disneyworld.disney.go.com/?CMP=OKC-80007798_GM_WDW_destination_waltdisneyworldresort_NA" target="_blank"
+              >Click here</a
+            >
+          </p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d56166.293121270915!2d-81.57074!3d28.377186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa71e391fd01cf1a0!2sWalt%20Disney%20World%C2%AE%20Resort!5e0!3m2!1sen!2sus!4v1662410657742!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <!-- info and map for universal studios -->
+        <div class="universal-info">
+          <h2>Universal Studios Florida</h2>
+          <p>Address: 6000 Universal Blvd, Orlando, FL 32819</p>
+          <p>Telephone: +14073638000</p>
+          <p>
+            Website:
+            <a href="https://www.universalorlando.com/web/en/us/theme-parks/universal-studios-florida?utm_source=google&utm_medium=organic&utm_campaign=GMB" target="_blank"
+              >Click here</a
+            >
+          </p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28057.095078006656!2d-81.467672!3d28.475424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf985d8fc7734a5a1!2sUniversal%20Studios%20Florida!5e0!3m2!1sen!2sus!4v1662410680712!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </main>
 
     <!-- This is the footer -->
-    <footer>
+    <div class="footer">
       <p>
         Author: Jade Wang<br />
-        <a href="mailto:qiwang2@andrew.cmu.edu" class="email">qiwang2@andrew.cmu.edu</a>
+        <a href="mailto:qiwang2@andrew.cmu.edu" class="email"
+          >qiwang2@andrew.cmu.edu</a
+        >
       </p>
-    </footer>
+    </div>
   </body>
 </html>

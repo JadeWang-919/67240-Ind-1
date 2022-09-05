@@ -44,55 +44,91 @@
 
       <!-- This is a form -->
       <form action="#" method="get">
+        <!-- asking personal info -->
         <fieldset>
-          <legend>Personal Information:</legend>
+          <legend>Personal Information</legend>
           <label> Name: </label>
-          <input type="text" name="name" />
+          <input type="text" name="name" placeholder="Enter full name" />
           <br />
           <label> Email: </label>
-          <input type="email" name="email"/>
+          <input type="email" name="email" placeholder="me@example.com" />
           <br />
         </fieldset>
         <br />
+        <!-- asking ratings -->
         <fieldset>
-          <legend>Your Review:</legend>
-          <p>
-            <label for="“hear-about”"> How did you hear about us? </label>
-            <select name="“referrer”" id="“hear-about”">
-              <option value="“google”">Google</option>
-              <option value="“friend”">Friend</option>
-              <option value="“advert”">Advert</option>
-              <option value="“other”">Other</option>
-            </select>
-          </p>
-          <p>
-            Would you visit again?
-            <br />
-            <label>
-              <input type="“radio”" name="“rating”" value="“yes”" />
-              Yes
-            </label>
-            <label>
-              <input type="“radio”" name="“rating”" value="“no”" />
-              No
-            </label>
-            <label>
-              <input type="“radio”" name="“rating”" value="“maybe”" />
-              Maybe
-            </label>
-          </p>
-          <p>
-            <label for="“comments”"> Comments: </label>
-            <br />
-            <textarea rows="“4”" cols="“40”" id="“comments”"> </textarea>
-          </p>
-          <label>
-            <input type="“checkbox”" name="“subscribe”" checked="“checked”" />
-            Sign me up for email updates
-          </label>
-          <br />
-          <input type="“submit”" value="“Submit" review” />
+          <legend>Ratings</legend>
+          <div class="ratings">
+            <!-- asking ratings for disney -->
+            <div>
+              <p class="rating-title">For Disneyland:</p>
+              <label for="rating-disney">
+                Which ride do you like the most?
+              </label>
+              <select name="rating-disney" id="rating-disney">
+                <option value="">Please choose one option:</option>
+                <option value="rock-n-roller">Rock 'n' Roller Coaster</option>
+                <option value="haunted-mansion">Haunted Mansion</option>
+                <option value="jungle-cruise">Jungle Cruise</option>
+              </select>
+              <br /><br />
+              <label>Have you been to Disneyland before?</label>
+              <br />
+              <label>Yes</label>
+              <input type="radio" name="past-experience-disney" value="yes" />
+              &nbsp;
+              <label>No</label>
+              <input type="radio" name="past-experience-disney" value="no" />
+            </div>
+
+            <!-- asking ratings for unviersal studios -->
+            <div>
+              <p class="rating-title">For Universal Studios:</p>
+              <label for="rating-universal">
+                Which ride do you like the most?
+              </label>
+              <select name="rating-universal" id="rating-universal">
+                <option value="">Please choose one option:</option>
+                <option value="despicable-me">
+                  Despicable Me Minion Mayhem
+                </option>
+                <option value="velocicoaster">
+                  Jurassic World VelociCoaster
+                </option>
+                <option value="river-adventures">
+                  Jurassic Park River Adventure
+                </option>
+              </select>
+              <br /><br />
+              <label>Have you been to Universal Studios before?</label>
+              <br />
+              <label>Yes</label>
+              <input
+                type="radio"
+                name="past-experience-universal"
+                value="yes"
+              />
+              &nbsp;
+              <label>No</label>
+              <input type="radio" name="past-experience-universal" value="no" />
+            </div>
+          </div>
         </fieldset>
+        <br />
+        <!-- asking for additional feedback -->
+        <div>
+          <label for="comments"> Any additional feedback: </label>
+          <br />
+          <textarea id="comments"> </textarea>
+        </div>
+        <!-- asking for subscription -->
+        <label>
+          <input type="checkbox" name="subscribe" checked="checked" />
+          Sign me up for more information on rides and attractions
+        </label>
+        <br />
+        <!-- submit survey button -->
+        <input type="submit" value="Submit survey" id="submit" />
       </form>
     </main>
 
