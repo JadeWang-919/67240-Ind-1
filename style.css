@@ -1,4 +1,4 @@
-/* I sort the selectors based on "General", "home", "page 1", "page 2", etc. Specifically, the selectors are ordered based on the element's appearance on the page. */
+/* I sort the selectors based on "General", "home", "page 1", "page 2", etc. Specifically, the selectors are ordered based on the element's appearance on each page. */
 
 /* General */
 
@@ -119,22 +119,15 @@ main {
   font-size: 24px;
 }
 
-.disney-img {
+.disney-img,.universal-img {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.disney-img img {
+.disney-img img,.universal-img img {
   width: 100%;
-}
-
-.universal-img {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.universal-img img {
-  width: 100%;
+  padding: 10px;
+  border-radius: 16px;
 }
 
 /* For page2.html (COMPARISON TABLE) */
@@ -246,15 +239,15 @@ input#submit:hover {
   grid-template-columns: 1fr 1fr;
 }
 
+.disney-info,.universal-info{
+  line-height: 32px;
+}
+
 .disney-info h2,
 .universal-info h2 {
   margin: 40px 20px 8px 20px;
   color: rgb(17, 87, 87);
   font-size: 24px;
-}
-
-.disney-info,.universal-info{
-  line-height: 32px;
 }
 
 iframe{
