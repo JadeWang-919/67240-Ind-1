@@ -150,7 +150,7 @@ main {
 
 #table-disney,
 #table-universal {
-  background-color: #faffe7;
+  background-color: #fcfff2;
 }
 
 #table-disney-heading,
@@ -170,7 +170,7 @@ td {
   padding: 8px;
 }
 
-thead .rides th {
+thead .rides{
   text-transform: uppercase;
 }
 
